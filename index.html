@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthday calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white px-12 py-12 rounded-lg shadow-lg flex flex-col justify-center items-center border-4 border-indigo-200">
+        <h2 class="flex capitalize text-gray-500 mt-4 shadow-lg"><p class="bg-blue-600 px-2 rounded text-white font-bold shadow-lg mr-1 text-xl">DOC</p> calculator⏰</h2><br>
+
+        <input type="text" id="doc" placeholder="enter applicant's name" class="border-2 px-4 py-2 rounded-lg shadow-lg border-indigo-200 shadow-lg"><br><br>
+
+        <button onclick="search()" class="bg-blue-600 px-4 py-2 rounded-md text-white capitalize hover:bg-blue-800 shadow-lg">search🔎</button><br><br>
+
+        <p id="result" class="capitalize text-blue-500 font-bold text-xl shadow-lg">🎂Result will show here 🎉</p>.
+    </div>
+
+    <script>
+        function search() {
+        let name = document.getElementById("doc").value;
+        if (name == "shakil") {
+            document.getElementById("result").innerText = "12-aug-1993 🎉🎉";
+        } 
+        else if (name == "tanha") {
+            document.getElementById("result").innerText = "18-feb-2004 🎉🎉";
+        }
+         else if (name == "addhaay") {
+            document.getElementById("result").innerText = "30-nov-2020 🎉🎉";
+        }
+        else {
+            document.getElementById("result").innerText = " 😪 not found 😪";
+            
+        }
+        }
+            
+        
+
+            
+        
+    </script>
+
+   
+       
+</body>
+
+    </script>
+
+</body>
+
+</html>
